@@ -1,0 +1,69 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta	    <meta
+      name="keywords"	      name="keywords"
+      content="CRUD Operations JavaScript, JS CRUD Operations"	      content="CRUD Operations JavaScript, JS CRUD Operations, CRUD LocalStorage, JS CRUD LocalStorage"
+    />	    />
+    <meta name="author" content="Arravind" />	    <meta name="author" content="Arravind" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/style.css" />	    <link rel="stylesheet" href="src/style/style.css" />
+  </head>	  </head>
+  <body>	  <body>
+    <fieldset>	    <div class="main-wrapper">
+      <legend>Insert Data</legend>	      <h2>JavaScript CRUD Operations Using LocalStorage</h2>
+      <input id="inputKey" type="text" placeholder="Enter Key" />	      <div class="panels-wrap">
+      <input id="inputValue" type="text" placeholder="Enter Value" />	        <div class="left-panel">
+      <button type="button" id="btnInsert">Insert Data</button>	          <div class="insert-box cardbox">
+    </fieldset>	            <p><b>Insert/ Update Data</b></p>
+    <fieldset>	            <span>Enter a key and a value to add and/ or update records</span>
+      <legend>Local Storage</legend>	            <div class="input-wrapper">
+      <p id="autoFILL"></p>	              <input id="inputKey" type="text" placeholder="Enter Key" />
+      <div id="lsOutput"></div>	              <input id="inputValue" type="text" placeholder="Enter Value" />
+    </fieldset>	            </div>
+    <button type="button" id="btnAllDelete">Delete All Data</button>	            <button type="button" id="btnInsert">Insert Data</button>
+    <br />	          </div>
+    <br />	          <div class="read-box cardbox">
+    <br />	            <p><b>Read Data</b></p>
+    <fieldset>	            <span>Enter a key and a value for the record</span>
+      <legend>Delete Data</legend>	            <div class="input-wrapper">
+      <input id="inputDelKey" type="text" placeholder="Enter Key" />	              <input
+      <button type="button" id="btnDelete">Delete Data</button>	                id="inputReadDataKey"
+    </fieldset>	                type="text"
+    <br />	                placeholder="Enter Key"
+    <br />	              />
+    <br />	              <button type="button" id="btnReadData">Read Data</button>
+    <fieldset>	            </div>
+      <legend>Read Data</legend>	            <p id="readedDataHere"></p>
+      <input id="inputReadDataKey" type="text" placeholder="Enter Key" />	          </div>
+      <p id="readedDataHere"></p>	          <div class="delete-box cardbox">
+      <button type="button" id="btnReadData">Read Data</button>	            <p><b>Delete Data</b></p>
+    </fieldset>	            <span
+              >Enter a key to delete the record associated with that key</span
+            >
+            <div class="input-wrapper">
+              <input id="inputDelKey" type="text" placeholder="Enter Key" />
+              <button type="button" id="btnDelete">Delete Data</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="display-all-box cardbox">
+            <p><b>Local Storage</b></p>
+            <span id="avialRecords"></span>
+            <p id="autoFILL"></p>
+            <div id="lsOutput"></div>
+            <div id="deleteAllBtn" class="delete-all">
+              <button type="button" id="btnAllDelete">Delete All Data</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/scripts.js"></script>	    <script src="src/scripts.js"></script>
+  </body>	  </body>
+</html>	</html>
+ Binary file addedBIN +93.9 KB 
+src/screenshot.png
